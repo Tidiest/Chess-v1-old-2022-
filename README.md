@@ -80,6 +80,6 @@ The included executable is the easiest way to try the application, but it still 
 
 ## Author
 
-**Tidiest**
+**Oleksandr Krotov**
 
 Originally created in **2022** as an experimental personal project while learning C++ and exploring chess programming.
