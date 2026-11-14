@@ -10,11 +10,13 @@ A prebuilt Windows executable is included in the repository:
 
 **[Download Chess.exe](https://github.com/Tidiest/Chess-v1-old-2022-/raw/refs/heads/main/Chess.exe)**
 
-Download the executable and run it on Windows. Keep the `sprites/` and `sounds/` folders next to the executable, as the application uses these files.
+**The executable requires the SFML DLL files at runtime.** They must be available next to `Chess.exe` (or in a directory included in the system PATH). The required DLL files are not currently included in this repository, so they must be supplied separately. Use DLLs compatible with the SFML version and build configuration used by this project.
+
+The `sprites/` and `sounds/` folders must also remain next to `Chess.exe`, because the application loads its graphics and sound assets from these folders. Keep the original folder structure when running the game.
 
 The player controls White and plays against the built-in AI. Use the **left mouse button** to select and move pieces.
 
-> The executable is provided as a convenience. Compatibility may depend on the Windows environment and required runtime components.
+> The executable is provided as a convenience. Compatibility may depend on the Windows environment and the availability of the required SFML DLLs and runtime components.
 
 ## Features
 
@@ -72,7 +74,7 @@ To compile it on another machine:
 3. Update the SFML include and library paths in the project properties. The checked-in project file contains paths from the original development environment.
 4. Open `Chess.vcxproj` and build the project.
 
-The included executable is the easiest way to try the application without setting up the development environment.
+The included executable is the easiest way to try the application, but it still requires the SFML DLLs and asset folders described above.
 
 ---
 
